@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+/* Body Header Styles */
+
+
+/* article styles */
+body > article#homepage {
+	width: 50%;
+	float: left;
+	margin: auto;
+	word-wrap: break-word;
+}
+
+/* aside styles */
+body > aside {
+	width: 30%;
+	float: left;
+	margin: auto;
+	word-wrap: break-word;
+}
+
+/* Footer Styles */
+
+

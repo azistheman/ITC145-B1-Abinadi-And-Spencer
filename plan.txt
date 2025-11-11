@@ -9,3 +9,16 @@ applications - Cable, Physical Media/Video Rental/Media Players, streaming, gami
 cost - big brands cost, how they have changed, statistics over the years
 
 Future - predict, what will be new, what will improve
+
+requirments:
+
+- Lists - COMPLETED
+- Links - COMPLETED
+- Images - COMPLETED
+NOT DOING - Image maps (Optional) - (i dont plan on using these. do you?)
+- Forms - COMPLETED on the future page
+- Tables - COMPLETED on the costs and application page
+- Audio and video files - implimenting on the history general page
+- Javascripts (Optional) - COMPLETED with the form.
+- Mobile friendly - implimenting on every page. good on all pages but the home page
+- slideshow - 

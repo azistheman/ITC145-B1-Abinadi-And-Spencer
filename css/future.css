@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* future.css
+
+/* Byline and lead */
+.byline {
+  font-style: italic;
+  color: #444;
+  margin: 0 0 1rem;
+}
+
+/* Readable paragraphs */
+article p, article ul {
+  text-align: left;
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+/* Lists */
+.future-list ul {
+  margin-left: 1.25rem;
+}
+
+/* Feedback form styles */
+#feedback {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(0,0,0,0.08);
+}
+
+form#tv-opinion-form {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-row label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.55rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  outline-offset: 2px;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(255,153,0,0.15);
+  border-color: rgb(255,153,0);
+}
+
+/* checkbox row */
+.checkbox-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* buttons */
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+button {
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgb(255,153,0);
+  color: #000;
+}
+
+button[type="reset"] {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.12);
+  color: #222;
+}
+
+/* success / error message */
+#form-message {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Footer contrast */
+footer {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Make nav wrap nicely on small screens */
+  nav.horizontalNavigation ul {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0.25rem;
+  }
+
+  nav.horizontalNavigation li {
+    width: 50% !important; /* two per row on small devices */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Keep the page layout consistent on larger screens but improve article look */
+article#title {
+  border-radius: 10px;
+  padding: 1.1rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  max-width: 960px;
+  /* keep center / similar look to original */
+}
+
+/* Byline style */
+article#title .byline {
+  font-size: 0.95em;
+  color: rgb(51, 51, 51);
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+/* Headline */
+article#title h1 {
+  font-size: 1.4em;
+  margin: 0 0 0.6rem 0;
+  text-align: left;
+}
+
+/* Paragraph readability */
+article#title p {
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 0.9rem;
+  white-space: normal;
+}
+
+/* Section and heading for costs */
+.costs-section h2 {
+  font-size: 1.05em;
+  margin: 0.8rem 0 0.5rem;
+  padding: 0.25rem 0.4rem;
+  display: inline-block;
+  background-color: rgb(255, 229, 204, 0.95);
+  border-radius: 6px;
+}
+
+/* Table container to allow horizontal scroll on tiny screens */
+.costs-wrap {
+  overflow-x: auto;
+  border: 2px solid rgb(51, 51, 51);
+  border-radius: 8px;
+  background-color: rgb(255, 229, 204);
+  padding: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+/* Table styling */
+table.costs {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* will cause horizontal scroll on narrow devices */
+}
+
+table.costs th,
+table.costs td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid rgb(51, 51, 51);
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+
+table.costs thead th {
+  background-color: rgb(255, 184, 77);
+  font-weight: 700;
+}
+
+/* Last-row border clean-up */
+table.costs tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Note text under table */
+.table-note {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgb(51, 51, 51);
+}
+
+/* Smaller devices: adjust table min-width and spacing */
+@media (max-width: 480px) {
+  article#title {
+    padding: 0.8rem;
+    margin: 0.6rem;
+  }
+
+  table.costs {
+    min-width: 520px;
+  }
+
+  nav.horizontalNavigation li {
+    width: 100% !important; /* stacked nav items on tiny screens */
+  }
+
+  table.costs th,
+  table.costs td {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

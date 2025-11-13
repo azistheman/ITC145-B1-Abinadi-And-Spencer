@@ -18,7 +18,7 @@ requirments:
 NOT DOING - Image maps (Optional) - (i dont plan on using these. do you?)
 - Forms - COMPLETED on the future page
 - Tables - COMPLETED on the costs and application page
-- Audio and video files - implimenting on the history general page
+- Audio and video files - COMPLETED on the history general page
 - Javascripts (Optional) - COMPLETED with the form.
-- Mobile friendly - implimenting on every page. good on all pages but the home page
+- Mobile friendly - COMPLETED
 - slideshow - 

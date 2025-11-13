@@ -74,12 +74,12 @@
         showMessage("Submission failed. Please try again later.", true);
       })
       .finally(() => submitBtn.disabled = false);
-      */
-      showMessage("Demo mode: ready to send to server (POST_URL is set).", false);
+      
+      showMessage("Demo mode: ready to send to server (POST_URL is set).", false);*/
     } else {
       // Demo local behavior: show JSON to user and clear form
       console.log("Form payload:", payload);
-      showMessage("Thanks — your opinion was recorded (demo).", false);
+      showMessage("Thanks! — opinion cannot be recorded due to not having a server.", false);
       form.reset();
     }
   });

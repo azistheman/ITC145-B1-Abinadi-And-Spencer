@@ -44,16 +44,23 @@ article#title .byline {
 }
 
 /* Headline */
-article#title h1 {
+article#title h1, h2 {
   font-size: 1.4em;
   margin: 0 0 0.6rem 0;
-  text-align: left;
+  text-align: center;
 }
 
 /* Paragraph readability */
 article#title p {
   line-height: 1.6;
   text-align: left;
+  margin-bottom: 0.9rem;
+  white-space: normal;
+}
+
+article#title p#sign {
+  line-height: 1.6;
+  text-align: center;
   margin-bottom: 0.9rem;
   white-space: normal;
 }
